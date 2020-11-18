@@ -1,0 +1,280 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  background-color: #f2f5f9;
+}
+/* text */
+.about-us h1, .product h1 {
+  font-family: 'Anton', sans-serif;
+  color: #e9573a;
+}
+
+.delivery-text,.footer h3 {
+  color: #ffffff;
+  font-family: 'Anton', sans-serif;
+}
+.footer p,.header a,.nav-button{
+  color: #ffffff;
+}
+.header .active, .header-mobile .collapse .active {
+  color: #b5ebfb;
+}
+
+.product h2,.delivery-button button {
+  font-family: 'Anton', sans-serif;
+  color: #1b796e;
+}
+
+.product a:hover, .product h2:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* icon */
+.fab{
+  color:#ffffff;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-size:2rem;
+}
+.footer .copy{
+  text-align: center;
+  line-height: 0rem;
+}
+/* header */
+.logo {
+  margin: 0.5rem 2rem;
+}
+
+nav {
+  width: 100%;
+  font-family: 'Anton', sans-serif;
+  background-image: linear-gradient(to bottom, #e34c49, #ee653e, #f57e32, #f79827);
+}
+
+.header a {
+  margin-left: 1rem;
+}
+
+.header .fab{
+  text-align: right;
+}
+.header-mobile .collapse .active {
+  border-color: #b5ebfb;
+}
+
+.header-mobile {
+  display: none;
+}
+
+.header-mobile nav {
+  padding: 0;
+}
+
+.header-mobile .collapse {
+  clear: both;
+  overflow: auto;
+  width: 100%;
+}
+
+.header-mobile .navbar-brand {
+  width: 20%;
+  float: left;
+}
+
+.header-mobile .navbar-toggler {
+  float: right;
+}
+
+.header-mobile .hamburger-button {
+  width: 70%;
+}
+
+.nav-button {
+  margin: 0.5rem;
+  width: 80%;
+  text-align: center;
+  border-color: #ffffff;
+}
+.navbar-nav{
+  width:80%;
+}
+.social-media{
+  text-align: right;
+  width:20%;
+}
+/* about us */
+.about-us .col-12 {
+  margin: auto;
+  text-align: center;
+}
+
+.about-us .container {
+  padding: 2rem 0;
+  width: 80%;
+}
+
+.about-us p {
+  text-align: left;
+}
+
+/* food delivery */
+.food-delivery {
+  margin: auto;
+  text-align: center;
+  background-image: url('/images/food-panda.png');
+  height: 45rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+}
+
+.delivery-text {
+  text-align: center;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.delivery-button button {
+  background-image: linear-gradient(to bottom, #3bd3c2, #6ad7ca, #8cdcd1, #aadfd8, #c5e3df);
+  top: 52%;
+  left: 50%;
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* product */
+.product {
+  margin: auto;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.product .container{
+  width: 90%;
+}
+.product .col-6 {
+  padding-top: 1rem;
+}
+
+.product .image-container {
+  margin: auto;
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.product .image-container:hover {
+  background-color: #b5ebfb;
+}
+
+.product h1 {
+  padding-top: 1rem;
+}
+.product h2{
+  padding-bottom: 1rem;
+}
+/* footer */
+.footer{
+  padding:2rem;
+  background-image: linear-gradient(to bottom, #e34c49, #ee653e, #f57e32, #f79827);
+}
+
+.footer .container{
+  width: 90%;
+}
+.footer-p{
+  line-height: 0.7;
+}
+.footer h3{
+  line-height: 2;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .header {
+    display: block;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /* Home Page */
+  .header {
+    display: block;
+  }
+
+  .food-delivery {
+    height: 40rem;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+
+  /* Home Page */
+  .header-mobile {
+    display: block;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .food-delivery {
+    height: 35rem;
+  }
+
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+  /* Home Page */
+  .about-us .container {
+    width: 80%;
+  }
+
+  .header-mobile {
+    display: block;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .food-delivery {
+    background-image: url('/images/foodpanda-mobile.png');
+    height: 35rem;
+  }
+
+  .delivery-text h1 {
+    display: none;
+  }
+
+  .delivery-button button {
+    padding: .3rem;
+    font-size: 16px;
+    top: 50%;
+  }
+
+  .product .image-container {
+    width: 100%;
+  }
+  .footer .container{
+    width: 100%;
+  }
+
+  .footer h3,.product h2{
+    font-size:1.5rem;
+  }
+}

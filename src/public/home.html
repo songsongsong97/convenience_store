@@ -1,0 +1,126 @@
+<!-- cover photo -->
+<!-- <img src="images/cover.png" alt="Cover photo" width="100%"> -->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+</ol>
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img class="d-block w-100" src="images/cover1.png" alt="Cover photo" width="100%">
+  </div>
+  <div class="carousel-item">
+    <img class="d-block w-100" src="images/cover2.png" alt="Cover photo" width="100%">
+  </div>
+  <div class="carousel-item">
+    <img class="d-block w-100" src="images/cover3.png" alt="Cover photo" width="100%">
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="sr-only">Next</span>
+</a>
+</div>
+
+<!-- about us -->
+<div class="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <img src="images/sitting_area.png" alt="Cover photo" width="100%">
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="container">
+          <h1>About Us</h1>
+          <p>Hola Mart serves every customers with care and patience. With variety of food choices and services, Hola Mart is your one-stop solution for hunger cravings, bills payment, top up services, and many more!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- food panda -->
+<div class="food-delivery">
+  <!-- <img src="images/food-panda.png" alt="Food Panda" > -->
+  <div class="delivery-text">
+    <h1>We are now on</h1>
+  </div>
+  <div class="delivery-button">
+    <button class="btn btn-default">Order Now</button>
+  </div>
+</div>
+<div class="product">
+  <div class="container">
+    <h1>Hola Mart's Product</h1>
+    <div class="row justify-content-center">
+      <product-category ng-repeat="productCategory in ProductCtrl.productCategories"
+                 category="productCategory">
+      </product-category>
+      <!-- #1 -->
+      <div class="col-6 col-md-4">
+        <div class="image-container">
+          <img src="images/products/coffee.png" alt="Coffee" width="80%">
+          <a href=#>
+            <h2>Coffee</h2>
+          </a>
+        </div>
+      </div>
+      <!-- #2 -->
+      <div class="col-6 col-md-4">
+        <div class="image-container">
+          <img src="images/products/pastry.png" alt="Coffee" width="80%">
+          <a href=#>
+            <h2>Pastry</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <div class="image-container">
+          <img src="images/products/icecream.png" alt="Coffee" width="80%">
+          <a href=#>
+            <h2>Ice Cream</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <div class="image-container">
+          <img src="images/products/oden.png" alt="Oden" width="80%">
+          <a href=#>
+            <h2>Oden</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <div class="image-container">
+          <img src="images/products/milktea.png" alt="Milk Tea" width="80%">
+          <a href=#>
+            <h2>Milk Tea</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4">
+        <div class="image-container">
+          <img src="images/products/seaweedroll.png" alt="Seaweed Roll" width="80%">
+          <a href=#>
+            <h2>Seaweed Roll</h2>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<!-- Google Map -->
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.946458929363!2d101.7994850134003!3d2.5243879573826704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cdf1eee7f820ed%3A0x6bd74d8ec63512f4!2sHola%20Mart%20Regina%20Mall!5e0!3m2!1sen!2smy!4v1605612036226!5m2!1sen!2smy"
+  width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
